@@ -22,6 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy": "aws s3 sync ./build s3://medicala-website/about/",
+    "cloudfront-invalidation": "aws cloudfront create-invalidation --distribution-id E1L895MF0GNXKU --paths '/*'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
