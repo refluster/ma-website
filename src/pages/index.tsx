@@ -1,12 +1,17 @@
-import { Box, Button, Typography } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
+import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import keyImage from '../img/key.jpg';
 
 export default function Index () {
+    const theme = useTheme();
+    const isSmall = useMediaQuery(theme.breakpoints.down('sm'));
+    console.log({isSmall});
+
     return (
         <Box>
             <Box sx={{
                 py: 16,
-                px: 8,
+                px: isSmall? 2: 8,
                 typography: {
                     h2: {
                         fontWeight: 400,
@@ -20,13 +25,14 @@ export default function Index () {
             <Box sx={{
                 backgroundImage: `url(${keyImage})`,
                 backgroundSize: 'cover',
+                backgroundPosition: '50% 50%',
                 height: 540,
                 mb: 8,
             }}>
             </Box>
             <Box sx={{
                 py: 8,
-                px: 8,
+                px: isSmall? 2: 8,
             }}>
                 <Typography paragraph>
                     あなたのメディカルデータから いまのあなたの健康状態をアート化。自分の内面を鑑賞できる絵画に。
@@ -37,7 +43,7 @@ export default function Index () {
             </Box>
             <Box sx={{
                 py: 8,
-                px: 8,
+                px: isSmall? 2: 8,
             }}>
                 <Button variant="contained" href="https://medicalart.gallery">
                     アプリを開く
@@ -45,7 +51,7 @@ export default function Index () {
             </Box>
             <Box sx={{
                 py: 8,
-                px: 8,
+                px: isSmall? 2: 8,
             }}>
                 <Typography variant="h5">
                     お問い合わせ
