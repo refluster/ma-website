@@ -45,7 +45,7 @@ export default function Index () {
                 py: 8,
                 px: isSmall? 2: 8,
             }}>
-                <Button variant="contained" href="https://medicalart.gallery">
+                <Button variant="contained" href="https://www.medicalart.gallery">
                     アプリを開く
                 </Button>
             </Box>
