@@ -35,18 +35,34 @@ export default function Index () {
                 px: isSmall? 2: 8,
             }}>
                 <Typography paragraph>
-                    あなたのメディカルデータから いまのあなたの健康状態をアート化。自分の内面を鑑賞できる絵画に。
-                </Typography>
-                <Typography paragraph>
-                    表情や行動、健康情報など、自身から生成されるデータをかけあわせ、現代のメディカルデータと再定義し、そのデータを基に、人の内面をアート化しました。MedicalArtを通して自分の知らなかった内面を知る体験を。
+                    私たちは、表情から感情を、<br />
+                    行動から習慣や傾向を、<br />
+                    現代のメディカルデータと再定義しました。<br />
+                    あなたの内面を様々な色と形で表現し、<br />
+                    今日のあなたをアートに。<br />
+                    ウェルネスは数値化し理解するデータから、<br />
+                    表現され、感じるアートへ。
                 </Typography>
             </Box>
             <Box sx={{
                 py: 8,
                 px: isSmall? 2: 8,
             }}>
-                <Button variant="contained" href="https://www.medicalart.gallery">
-                    アプリを開く
+                <Button variant="contained" color="primary" href="https://www.medicalart.gallery">
+                    MedicalArtを生成する
+                </Button>
+            </Box>
+            <Box sx={{
+                py: 8,
+                px: isSmall? 2: 8,
+            }}>
+                <Typography variant="h5">
+                    INFORMATION
+                </Typography>
+                <Button variant="outlined" sx={{
+                    my: 4,
+                }} href="https://www.instagram.com/medicalart_official">
+                    Instagram
                 </Button>
             </Box>
             <Box sx={{
@@ -58,7 +74,6 @@ export default function Index () {
                 </Typography>
                 <Button variant="outlined" sx={{
                     my: 4,
-                    color: '#000',
                 }} href="mailto:contact@medicalart.gallery">
                     contact@medicalart.gallery
                 </Button>
